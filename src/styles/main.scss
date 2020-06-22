@@ -1,7 +1,32 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "header";
+@import "promo";
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-  background: $c-gray;
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
 }
