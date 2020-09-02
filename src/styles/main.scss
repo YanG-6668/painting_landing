@@ -1,32 +1,86 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "loaderPage";
 @import "utils";
 @import "fonts";
-@import "typography";
 @import "header";
-@import "promo";
+@import "services";
+@import "gallery";
+@import "why-we";
+@import "price";
+@import "phone";
+@import "footer";
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
-  margin: 0 auto;
+  // margin: 0;
+  background-color: $BG-page;
+  color: #fff;
 }
 
 ul {
   padding: 0;
+  margin: 0;
 }
 
 li {
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1200px;
   width: 100%;
+
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 20px;
+
+  @media (max-width: 600px) {
+    padding: 0 10px;
+  }
+}
+
+.anchor {
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  z-index: 4;
+
+  display: none;
+
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: $BG-page;
+
+  padding: 10px;
+
+  @include hover(background-color, #ac1212);
+
+  &__img {
+    width: 25px;
+    height: 25px;
+  }
+
+  @media (max-width: 475px) {
+    right: 10px;
+  }
 }

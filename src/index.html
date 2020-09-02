@@ -1,68 +1,539 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
   <html lang="en">
 
   <head>
+    <link
+      rel="shortcut icon"
+      href="./images/icon/favicon.png"
+      type="image/png"
+    >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHERRY</title>
+    <meta
+      name="google-site-verification"
+      content="MTnRMi4PM1LXvDzSr04Xtu0Q_VJrpbsdLypYJ6ZCg1g">
+    <meta
+      name="description"
+      content="Фарбування автомобілів та кузовні роботи у місті Вінниця.
+      Ми гарантуємо вам якісну роботу в короткі терміни виконання.">
+    <title>Фарбування автомобілів у Вінниці</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
 
   <body>
-    <header class="header">
+
+    <div class="preloader" id="page-preloader">
+      <div class="loader"></div>
+    </div>
+
+    <header class="header" id="header">
       <div class="container">
         <div class="header__wrapper">
-          <div class="header__logo">
-            <a href="#">LOGO</a>
-          </div>
-          <div class="header__nav nav">
-            <ul class="nav__list">
-              <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Price</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-            </ul>
-          </div>
+          <a href="#" class="header__logo" >
+            <img
+              src="./images/logo.jpg"
+              class="header__logo-img"
+              alt="logo"
+            >
+          </a>
+          <h1 class="header__promo-words">
+            Фарбування автомобілів<br>
+            <span class="header__and">
+              &
+            </span>
+             Кузовні роботи у Вінниці
+          </h1>
           <div class="header__info">
-            <a href="#" class="header__link">Phone</a>
-            <a href="#" class="header__link">Email</a>
+            <a href="tel:+380954928257" class="header__link header__link--phone">
+              + 38(095) 492 82 57
+            </a>
+            <a href="tel:+380631024572" class="header__link">
+              + 38(063) 102 45 72
+            </a>
+            <a href="mailto:paintcarvinua@gmail.com" class="header__link header__link--email">
+              paintcarvinua@gmail.com
+            </a>
           </div>
         </div>
       </div>
+      <div class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <p class="nav__link--active">Головна</p>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Послуги</a>
+          </li>
+          <li class="nav__item">
+            <a href="#gallery" class="nav__link">Галерея</a>
+          </li>
+          <li class="nav__item">
+            <a href="#price" class="nav__link">Ціни</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Контакти</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__promo">
+      </div>
+      <a href="#menu" class="menu__link">
+        <span></span>
+      </a>
+      <nav class="mobile">
+        <ul class="mobile__list">
+          <li class="mobile__item">
+            <a href="#header" class="mobile__link">Головна</a>
+          </li>
+          <li class="mobile__item">
+            <a href="#services" class="mobile__link">Послуги</a>
+          </li>
+          <li class="mobile__item">
+            <a href="#gallery" class="mobile__link">Галерея</a>
+          </li>
+          <li class="mobile__item">
+            <a href="#price" class="mobile__link">Ціни</a>
+          </li>
+          <li class="mobile__item">
+            <a href="#contact" class="mobile__link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#header" class="anchor">
+        <img
+          src="./images/icon/up.svg"
+          class="anchor__img"
+          alt="anchor"
+        >
+      </a>
     </header>
 
-    <section class="promo">
+    <section class="services" id="services">
       <div class="container">
-        <div class="promo__wrapper">
-          <div class="promo__item">
-            <!-- <img src="./images/promo.jpg" class="promo__item-img" alt=""> -->
-            <div class="promo__content">
-              <div class="promo__content-title">
-                кузовной ремонт
-              </div>
-              <div class="promo__content-text">
-                ВСЕ ВИДЫ РАБОТ
-                ОТ ПОКРАСКИ ДО ВОССТАНОВЛЕНИЯ ГЕОМЕТРИИ КУЗОВА.
-                БЫСТРО. КАЧЕСТВЕННО. НЕДОРОГО.
-              </div>
+        <h2 class="services__title">
+          Послуги
+        </h2>
+        <div class="services__wrapper">
+          <div class="services__item">
+            <div class="services__picture">
+              <img
+                src="./images/services/car-painting.svg"
+                alt="painting"
+                class="services__img"
+              >
             </div>
-
-            <div class="promo__send">
-              <div class="promo__send-title">
-                ЗАПИСАТЬСЯ НА КУЗОВНОЙ РЕМОНТ
-              </div>
-              <input type="text" class="promo__send-input"
-                placeholder="Name" required>
-              <input type="text" class="promo__send-input"
-                placeholder="Phone number" required>
-
-              <button class="promo__send-btn" type="button">Send</button>
+            <div class="services__content">
+              <h3 class="services__content-title">
+                Фарбування
+              </h3>
+              <ul class="services__content-list">
+                <li class="services__content-item">Повне фарбування кузова</li>
+                <li class="services__content-item">Фарбування деталей</li>
+                <li class="services__content-item">Локальне фарбування</li>
+                <li class="services__content-item">Точкове фарбування</li>
+              </ul>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="services__picture">
+              <img
+                src="./images/services/car.svg"
+                alt="repair"
+                class="services__img"
+              >
+            </div>
+            <div class="services__content">
+              <h3 class="services__content-title">
+                Кузовні роботи
+              </h3>
+              <ul class="services__content-list">
+                <li class="services__content-item">Зварювальні роботи</li>
+                <li class="services__content-item">Рихтуваня авто</li>
+                <li class="services__content-item">Антикорозійне оброблення кузова</li>
+              </ul>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="services__picture">
+              <img
+                src="./images/services/polisher.svg"
+                alt="polisher"
+                class="services__img"
+              >
+            </div>
+            <div class="services__content">
+              <h3 class="services__content-title">
+                Полірування
+              </h3>
+              <ul class="services__content-list">
+                <li class="services__content-item">Повне полірування</li>
+                <li class="services__content-item">Точкове полірування</li>
+                <li class="services__content-item">Полірування фар</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <script type="text/javascript" src="scripts/main.js"></script>
+
+    <section class="gallery" id="gallery">
+      <h3 class="gallery__title">
+        Галерея
+      </h3>
+      <div class="gallery__wrapper">
+        <img
+          src="./images/gallery/1.jpg"
+          class="gallery__item grid-1"
+          alt="auto repair"
+        >
+        <img
+          src="./images/gallery/2.jpg"
+          class="gallery__item grid-2"
+          alt="auto repair"
+        >
+        <img
+          src="./images/gallery/3.jpg"
+          class="gallery__item grid-3"
+          alt="auto repair"
+        >
+        <img
+          src="./images/gallery/4.jpg"
+          class="gallery__item grid-4"
+          alt="auto repair"
+        >
+        <img
+          src="./images/gallery/5.jpg"
+          class="gallery__item grid-5"
+          alt="auto repair"
+        >
+        <img
+          src="./images/gallery/6.jpg"
+          class="gallery__item grid-6"
+          alt="auto repair"
+        >
+        <img
+          src="./images/gallery/7.jpg"
+          class="gallery__item grid-7"
+          alt="auto repair"
+        >
+        <img
+          src="./images/gallery/8.jpg"
+          class="gallery__item grid-8"
+          alt="auto repair"
+        >
+      </div>
+    </section>
+
+    <section class="why-we">
+      <div class="container">
+        <h2 class="why-we__title">
+          Чому вам слідує обирати нас:
+        </h2>
+        <p class="why-we__content">
+          У нас працюють відповідальні професіонали з досвідом фарбування автомобілів будь-якої марки стажом 8 років.<br>
+          Ми гарантуємо вам якісну роботу в короткі терміни виконання.<br>
+          Приїжджайте до нас, тут вашому транспортному засобу повернуть первозданний вигляд, поліпшать його характеристики, виправлять ті чи інші недоліки.
+        </p>
+      </div>
+    </section>
+
+    <section class="price" id="price">
+      <div class="container">
+        <h3 class="price__title">
+          Ціни на наші роботи
+        </h3>
+        <div class="price__wrapper">
+          <div class="price__item">
+            <h4 class="price__item-title">
+              Фарбування
+            </h4>
+            <p class="price__item-text">
+              Повне фарбування автомобіля:
+              <span class="price__item-cost">від 15000</span>
+            </p>
+            <p class="price__item-text">
+              Фарбування капота:
+              <span class="price__item-cost">від 2000</span>
+            </p>
+            <p class="price__item-text">
+              Фарбування криші:
+              <span class="price__item-cost">від 2000</span>
+            </p>
+            <p class="price__item-text">
+              Фарбування дверей:
+              <span class="price__item-cost">від 1400</span>
+            </p>
+            <p class="price__item-text">
+              Фарбування бамперів:
+              <span class="price__item-cost">від 1300</span>
+            </p>
+            <p class="price__item-text">
+              Фарбування крил:
+              <span class="price__item-cost">від 1300</span>
+            </p>
+          </div>
+          <div class="price__item">
+            <h4 class="price__item-title">
+              Полірування
+            </h4>
+            <p class="price__item-text">
+              Полірування автомобіля:
+              <span class="price__item-cost">від 2000</span>
+            </p>
+            <p class="price__item-text">
+              Полірування детально:
+              <span class="price__item-cost">від 350</span>
+            </p>
+            <p class="price__item-text">
+              Полірування фар:
+              <span class="price__item-cost">від 300</span>
+            </p>
+          </div>
+          <div class="price__item">
+            <h4 class="price__item-title">
+              Рехтовка та зварка
+            </h4>
+            <p class="price__item-text">
+              Зварювальні роботи:
+              <span class="price__item-cost">від 300</span>
+            </p>
+            <p class="price__item-text">
+              Зварювання дна:
+              <span class="price__item-cost">від 400</span>
+            </p>
+            <p class="price__item-text">
+              Ремонт вихлопної системи:
+              <span class="price__item-cost">від 300</span>
+            </p>
+            <p class="price__item-text">
+              Заміна порога:
+              <span class="price__item-cost">від 1000</span>
+            </p>
+          </div>
+          <div class="price__item">
+            <h4 class="price__item-title">
+              Обробка кузова
+            </h4>
+            <p class="price__item-text">
+              Антикорозійне оброблення кузова:
+              <span class="price__item-cost">від 1500</span>
+            </p>
+          </div>
+        </div>
+        <div class="price__anchor">
+          <a href="#repair" class="price__link">
+            записатись на ремонт
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="phone">
+      <div class="phone__shadow">
+        <div class="container">
+          <div class="phone__content">
+            <p class="phone__text">
+              Надаємо швидкі та якісні послуги для вашого автомобіля
+            </p>
+            <a href="tel:+380954928257" class="phone__link">+ 38(095) 492 82 57</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="container">
+        <h3 class="footer__title">
+          Контакти
+        </h3>
+        <div class="footer__wrapper">
+          <div class="footer__item">
+            <a href="https://goo.gl/maps/UHRiqZ4kN8HHhwzZ8" class="footer__link">
+              <svg
+                id="Layer_1"
+                enable-background="new 0 0 512 512"
+                height="20px"
+                viewBox="0 0 512 512"
+                width="20px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <path
+                  d="m407.579 87.677c-31.073-53.624-86.265-86.385-147.64-87.637-2.62-.054-5.257-.054-7.878
+                  0-61.374 1.252-116.566 34.013-147.64 87.637-31.762 54.812-32.631
+                  120.652-2.325 176.123l126.963 232.387c.057.103.114.206.173.308
+                  5.586 9.709 15.593 15.505 26.77 15.505 11.176 0 21.183-5.797
+                  26.768-15.505.059-.102.116-.205.173-.308l126.963-232.387c30.304-55.471
+                  29.435-121.311-2.327-176.123zm-151.579 144.323c-39.701
+                  0-72-32.299-72-72s32.299-72 72-72 72 32.299 72 72-32.298 72-72 72z">
+                </g>
+              </svg>
+              Вінниця, вул. Чехова, 25
+            </a>
+            <p class="footer__link">
+              <svg
+                height="20px"
+                viewBox="0 0 512 512"
+                width="20px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256
+                  256-114.835938 256-256-114.835938-256-256-256zm121.75 388.414062c-4.160156
+                  4.160157-9.621094 6.253907-15.082031 6.253907-5.460938
+                  0-10.925781-2.09375-15.082031-6.253907l-106.667969-106.664062c-4.011719-3.988281-6.25-9.410156-6.25-15.082031v-138.667969c0-11.796875
+                  9.554687-21.332031 21.332031-21.332031s21.332031 9.535156 21.332031
+                  21.332031v129.835938l100.417969 100.414062c8.339844 8.34375 8.339844
+                  21.824219 0 30.164062zm0 0"
+                  >
+              </svg>
+              Ми працюєму пн-сб з 9:00 до 20:00
+            </p>
+            <a href="tel:+380954928257" class="footer__link">
+              <svg
+                id="Capa_1"
+                enable-background="new 0 0 495.988 495.988"
+                height="20px"
+                viewBox="0 0 495.988 495.988"
+                width="20px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g>
+                  <path
+                    d="m495.988 418.009-77.933 77.933c-106.997.024-214.001-40.782-295.637-122.418-81.588-81.589-122.394-188.517-122.418-295.452l78.026-78.026 106.456 106.456-69.417 69.417c.012 52.461 20.031 104.919 60.058 144.946 40.05 40.05 92.545 60.069 145.037 60.058l69.371-69.371z">
+                </g>
+              </svg>
+              + 38(095) 492 82 57
+            </a>
+            <a href="tel:+380631024572" class="footer__link">+ 38(063) 102 45 72</a>
+            <a href="mailto:paintcarvinua@gmail.com" class="footer__link">
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="20px"
+                height="20px"
+                viewBox="0 0 550.795 550.795"
+              >
+                <g>
+                  <g>
+                    <path d="M501.613,491.782c12.381,0,23.109-4.088,32.229-12.16L377.793,323.567c-3.744,2.681-7.373,5.288-10.801,7.767
+                      c-11.678,8.604-21.156,15.318-28.434,20.129c-7.277,4.822-16.959,9.737-29.045,14.755c-12.094,5.024-23.361,7.528-33.813,7.528
+                      h-0.306h-0.306c-10.453,0-21.72-2.503-33.813-7.528c-12.093-5.018-21.775-9.933-29.045-14.755
+                      c-7.277-4.811-16.75-11.524-28.434-20.129c-3.256-2.387-6.867-5.006-10.771-7.809L16.946,479.622
+                      c9.119,8.072,19.854,12.16,32.234,12.16H501.613z"></path>
+                    <path d="M31.047,225.299C19.37,217.514,9.015,208.598,0,198.555V435.98l137.541-137.541
+                      C110.025,279.229,74.572,254.877,31.047,225.299z"></path>
+                    <path d="M520.059,225.299c-41.865,28.336-77.447,52.73-106.75,73.195l137.486,137.492V198.555
+                      C541.98,208.396,531.736,217.306,520.059,225.299z"></path>
+                    <path d="M501.613,59.013H49.181c-15.784,0-27.919,5.33-36.42,15.979C4.253,85.646,0.006,98.97,0.006,114.949
+                      c0,12.907,5.636,26.892,16.903,41.959c11.267,15.061,23.256,26.891,35.961,35.496c6.965,4.921,27.969,19.523,63.012,43.801
+                      c18.917,13.109,35.368,24.535,49.505,34.395c12.05,8.396,22.442,15.667,31.022,21.701c0.985,0.691,2.534,1.799,4.59,3.269
+                      c2.215,1.591,5.018,3.61,8.476,6.107c6.659,4.816,12.191,8.709,16.597,11.683c4.4,2.975,9.731,6.298,15.985,9.988
+                      c6.249,3.685,12.143,6.456,17.675,8.299c5.533,1.842,10.655,2.766,15.367,2.766h0.306h0.306c4.711,0,9.834-0.924,15.368-2.766
+                      c5.531-1.843,11.42-4.608,17.674-8.299c6.248-3.69,11.572-7.02,15.986-9.988c4.406-2.974,9.938-6.866,16.598-11.683
+                      c3.451-2.497,6.254-4.517,8.469-6.102c2.057-1.476,3.605-2.577,4.596-3.274c6.684-4.651,17.1-11.892,31.104-21.616
+                      c25.482-17.705,63.01-43.764,112.742-78.281c14.957-10.447,27.453-23.054,37.496-37.803c10.025-14.749,15.051-30.22,15.051-46.408
+                      c0-13.525-4.873-25.098-14.598-34.737C526.461,63.829,514.932,59.013,501.613,59.013z"></path>
+                  </g>
+                </g>
+              </svg>
+                paintcarvinua@gmail.com
+            </a>
+            <div class="footer__community">
+              <a href="https://instagram.com/paint_car_vinua?igshid=11bx9kvz9i0hr" class="footer__community-link">
+                <img
+                  src="./images/icon/instagram-sketched.svg"
+                  alt="instagram"
+                  class="footer__img"
+                >
+              </a>
+              <a href="https://teleg.run/paint_car" class="footer__community-link">
+                <img
+                  src="./images/icon/telegram.svg"
+                  alt="telegram"
+                  class="footer__img"
+                >
+              </a>
+              <a href="viber://chat?number=+380631024572" class="footer__community-link">
+                <img
+                  src="./images/icon/viber.svg"
+                  alt="viber"
+                  class="footer__img"
+                >
+              </a>
+              <a href="https://www.facebook.com/teilor.waters/" class="footer__community-link">
+                <img
+                  src="./images/icon/facebook.svg"
+                  alt="facebook"
+                  class="footer__img"
+                >
+              </a>
+            </div>
+          </div>
+          <div class="footer__item">
+            <h3 class="footer__title-form" id="repair">
+              записатись на ремонт
+            </h3>
+            <form
+              action="mail.php"
+              enctype="multipart/form-data"
+              method="POST"
+            >
+              <input
+                type="text"
+                class="footer__form-input"
+                name="user_name"
+                placeholder="Ваше ім'я"
+                required
+              >
+              <br>
+              <input
+                type="email"
+                class="footer__form-input"
+                name="user_email"
+                placeholder="Ваш example@gmail.com"
+              >
+              <br>
+              <input
+                type="tel"
+                class="footer__form-input"
+                name="user_phone"
+                placeholder="Ваш телефон"
+                required
+              >
+              <br>
+              <label class="footer__form-file" for="upload">
+                Завантажити файл
+              </label>
+              <input
+                type="file"
+                id="upload"
+                name="upload"
+              >
+              <button type="submit" class="footer__form-btn">Відправити</button>
+            </form>
+          </div>
+          <div class="footer__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.607087993343!2d28.528377615687408!3d49.22697817932524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5ae0c03685d1%3A0x1fd7dc140f7d5e1e!2z0YPQuy4g0KfQtdGF0L7QstCwLCAyNSwg0JLQuNC90L3QuNGG0LAsINCS0LjQvdC90LjRhtC60LDRjyDQvtCx0LvQsNGB0YLRjCwgMjEwMDA!5e0!3m2!1sru!2sua!4v1597402453357!5m2!1sru!2sua"
+              width="100%"
+              height="350"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+          © 2020. Фарбування автомобілів. Всі права захищені.
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/main.js"></script>
   </body>
 
   </html>
