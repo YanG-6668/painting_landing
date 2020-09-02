@@ -1,4 +1,4 @@
-Car painting & repair work (Landing Page)
+# Car painting & repair work (Landing Page)
 
-Stack
+# Stack
 HTML/SCSS, JavaScript, Jquery, Gulp, BEM methodology
